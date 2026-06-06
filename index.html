@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,f_auto,q_auto:best,w_640/v1602395829/f83ejycym4xfukzyw1kz.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 8am to 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Kedai<br>Tekwan <br> Reza</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">25 Alamat, Veteran</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">KEDAI TEKWAN REZA</span></h5>
+    <p>Jika berbicara mengenai makanan khas Palembang, yang langsung terlintas pertama dalam pikiran pastilah pempek. Padahal masih banyak kuliner asal Palembang yang tak kalah menarik dari pempek, seperti tekwan. Resep tekwan memiliki bahan utama yang hampir menyerupai pempek yakni daging ikan giling dan tepung tapioka. Perbedaan utamanya adalah penyajian tekwan yang menggunakan kuah kaldu udang yang gurih serta dilengkapi sayuran dan bahan-bahan lainnya. .</p>
+    <p></p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Cintai Masakan Nusantara Indonesia.</i></p>
+      <p>Chef,Owner: Reza</p>
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-mYVJZPrDYvD21kwImCGCAsxCNn53TJgpPA&s" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Buka Jam:</strong> Setiao Hari Dari 8am to 5pm.</p>
+    <p><strong>Alamat:</strong> 25 Veteran, 31121, PBM</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Tekwan Biasa</h5>
+      
+    
+      <h5> Model Telur</h5>
+     
+     
+      <h5> Model Beranak</h5>
+    
+      <h5>Model Tahu</h5>
+      
+      
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Teh Panas</h5>
+      
+    
+      <h5>Teh Campa</h5>
+      
+      <h5>Teh Dingin</h5>
+      
+    
+      <h5>Kopi Hitam</h5>
+      
+    
+      <h5>Kopi Susu</h5>
+      
+    </div>  
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfoBX_Yae2ltUsLAUjFEGDFSv-Em2TkdpqMQ&s" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DI MANA ANDA DAPAT MENEMUKAN KAMI</span></h5>
+    <p>Kota Prabumulih .</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOYWVcW1NO_e3Wr3LnCN0MsKpEmFQflZlF5g&s" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> Terimah Pesanan  Untuk Acara Ulang Tahun,Acara Pesta Pernikahan Dan Acaa Resmi lain Nya.</p>
+    <p><strong>Pesan</strong> tanyakan menu spesial hari ini, atau kirimkan pesan kepada kami:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered Reza <a href="" title="" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh audio sebagai background</title>
+</head>
+<body>
+ 
+  <audio hidden autoplay loop>
+    <source src="Ngoni.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio
+  </audio>
+</body>
+</html>
+
+</html>
+
